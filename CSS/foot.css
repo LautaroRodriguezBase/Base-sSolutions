@@ -1,0 +1,28 @@
+.pie{
+    padding: 4% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(#000, #222);
+}
+.pie_table{
+    width: 90%;
+    padding: 4% 0;
+}
+.pie_table_rows{
+    text-align: center;
+}
+
+.pie_table_column{
+    padding: 2% 0;
+}
+
+.pie_table_column-H{
+    font-size: 250%;
+}
+
+.pie_table_column-D{
+    font-size: 125%;
+}

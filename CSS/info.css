@@ -1,0 +1,39 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #110e2c;
+    color: #fff;
+}
+
+.cabeza{
+    border-bottom: 1px solid #000;
+    font-size: 250%;
+    padding: 7% 0;
+    padding-left: 10%;
+    background-image: url(../Media/BSTransparent.svg);
+    background-repeat: space;
+    background-size: 12%;
+}
+
+.cuerpo{
+    background-image: url(../Media/personaTablet.jpg);
+}
+
+.cuerpo_about{
+    margin: 0 5%;
+    padding: 4% 0;
+    color: #110e2c;
+}
+.cuerpo_about_title{
+    font-size: 200%;
+    margin: 2% 0;
+}
+
+.cuerpo_about_des{
+    font-size: 140%;
+    font-weight: 500;
+    padding-right: 50%;
+    line-height: 150%;
+}

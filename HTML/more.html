@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/navBar.css">
+    <link rel="stylesheet" href="../CSS/more.css">
+    <link rel="stylesheet" href="../CSS/foot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Media/BS.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bd1ca52af4.js" crossorigin="anonymous"></script>
+    <title>More</title>
+</head>
+<body>
+    <nav class="barra barra-home">
+        <div class="barra_l">
+            <a class="barra_l_img" href="../index.html">
+                <img class="barra_l-img" src="../Media/BS.svg" alt="logoCoronaSF">
+            </a>
+            <h1 class="barra_title">Base's Solutions</h1>
+        </div>
+        <div class="barra_r">
+            <ul class="barra_list">
+                <li class="barra_list_e home">
+                    <a class="barra_list_btm" href="../index.html"><i class="fas fa-home-lg-alt fas2"><br>Home</i></a>
+                </li>
+                <li class="barra_list_e">
+                    <a class="barra_list_btm" href="../HTML/info.html"><i class="fas fa-info-circle fas2"><br>Info</i></a>
+                </li>
+                <li class="barra_list_e">
+                    <a class="barra_list_btm" href="../HTML/more.php"><i class="fas fa-plus fas2"><br>More</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="cabeza">
+        <h2 class="cabeza_title">CONTaCTo</h2>
+    </div>
+    <div class="cuerpo">
+        <div class="cuerpo_head">
+            <h3 class="cuerpo_head_title">ESCRIBINOS</h3>
+            <p class="cuerpo_head_subt">
+                Consulta tus dudas o solicita presupuestos sin compromiso
+            </p>
+        </div>
+        <div class="formulario">
+            <form class="formulario_box" method="post" autocomplete="off">
+                <div class="form_box_placeholder">
+                    <input class="form_ip" placeholder="Nombre" type="text" name="nombre" id="pNombre" maxlength="30" required>
+                    <label class="form_box-placeholder" for="name">Nombre</label>            
+                </div>
+                <div class="form_box_placeholder">
+                    <input class="form_ip" placeholder="Mail" type="email" name="mail" id="eMail" required>
+                    <label class="form_box-placeholder">Mail</label>                
+                </div>
+                <div class="form_box_placeholder">
+                    <input class="form_ip" placeholder="Numero" type="number" name="cel" id="nCel" required>
+                    <label class="form_box-placeholder">Numero</label>                
+                </div>
+                <div class="form_box_placeholder">
+                    <textarea class="form_ip" placeholder="Mensaje" maxlength="500" name="taMsj" id="msj" cols="50" rows="5" required></textarea>
+                    <label class="form_box-placeholder">Mensaje</label>                
+                </div>
+                <div class="boxBtnB">
+                    <div class="boxBtn">
+                        <input class="boxBtn_b" type="submit" name="enviar" value="Enviar">
+                        <span class="boxBtn_s"></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="pie">
+        <table class="pie_table">
+            <tr class="pie_table_rows r1">
+                <th class="pie_table_column pie_table_column-H"><i class="fas fa-envelope"></i></td>
+                <th class="pie_table_column pie_table_column-H"><i class="fas fa-phone-alt"></i></td>
+                <th class="pie_table_column pie_table_column-H"><i class="fas fa-map-marker-alt"></i></td>
+            </tr>
+            <tr class="pie_table_rows r2">
+                <td class="pie_table_column pie_table_column-D">example@example.com</td>
+                <td class="pie_table_column pie_table_column-D">+54 9 223 123 4567</td>
+                <td class="pie_table_column pie_table_column-D">Arg, BA, MDP, calle 123</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

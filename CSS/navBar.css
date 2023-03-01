@@ -1,0 +1,133 @@
+.barra{
+    box-shadow: 0 0 5px 0 #000000;
+    background: linear-gradient(#000, #222);
+    display: flex;
+}
+
+.barra_l{
+    display: flex;
+    width: 50%;
+}
+
+.barra_title{
+    
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: -webkit-linear-gradient(#42D2FF, #00f2f2);
+    /*La propiedad webkit define los navegadores compatibles*/
+    /*La propiedad background-clip define hasta dónde debe extenderse el fondo (color o imagen) dentro de un elemento*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    height: fit-content;
+    padding-top: 2%;
+}
+
+.barra_l_img{
+
+    margin: 0 2%;
+}
+
+.barra_l-img{
+    width: 60px;
+    height: 60px;
+}
+
+.barra_r{
+    display: flex;
+    justify-content: end;
+    margin-left: 25%;
+    width: fit-content;
+}
+
+.barra_list{
+
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+.barra_list_e{
+    
+    display: flex;
+}
+
+.barra_list_btm{
+
+    text-align: center;
+    position: relative;
+    width: 80px;
+    height: 50px;/*
+    padding:25% 0 25% 0;*/
+    margin:5px;
+    border-radius: 15%;
+    color: #00f2f2;
+    background: linear-gradient(#000, #222);
+    overflow: hidden;/*especifica si recortar el contenido o 
+    agregar barras de desplazamiento cuando el contenido de 
+    un elemento es demasiado grande para caber en el área especificada.*/
+}
+
+.fas2{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    transition: 0.4s ease-in-out;
+}
+
+
+.barra_list_btm::before{
+
+    content: "";
+    position: absolute;
+    width: 160%;
+    height: 200%;
+    background: linear-gradient(#00f2f2, #0072ff);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.barra_list_btm:hover .fas2{
+
+    color: #000000;
+    animation: expand 0.6s 1;
+    font-size: 18px;
+}
+
+@keyframes expand{
+    0%{
+        font-size: 16px;
+    }
+    50%{
+        font-size: 20px;
+    }
+    100%{
+        font-size: 18px;
+    }
+}
+
+.barra_list_btm:hover::before{
+
+    animation: onHover2 0.8s 1;
+    left: -10%;
+    top: -20%;
+}
+
+
+@keyframes onHover2 {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 0%;
+        top: -80%;
+    }
+    100%{
+        top: -20%;
+        left: -10%;
+    }
+}

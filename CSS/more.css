@@ -1,0 +1,169 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #110549;
+    color: #fff;
+}
+
+.cabeza{
+    background-color: #110e2c;
+    border-bottom: 1px solid #000;
+    font-size: 250%;
+    padding: 7% 0;
+    padding-left: 10%;
+    background-image: url(../Media/BSTransparent.svg);
+    background-repeat: space;
+    background-size: 12%;
+}
+
+.cabeza_title{
+
+    text-transform: uppercase;
+}
+
+.cuerpo{
+    text-align: center;
+}
+
+.cuerpo_head{
+    margin: 0 10%;
+    padding: 5% 0 1% 0;
+}
+
+.cuerpo_head_title{
+    font-size: 200%;
+    margin: 0 5%;
+    padding: 2% 0;
+    text-transform: uppercase;
+}
+
+.cuerpo_head_subt{
+    font-size: 110%;
+    margin: 0 5%;
+    padding: 2% 0;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    padding: 2% 0;
+}
+
+.formulario_box{
+    margin: 0 5%;
+}
+
+.form_box_placeholder{
+    position: relative;
+    z-index: 0;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+  
+.form_ip{
+    position: relative;
+    z-index: 1;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    resize: none;
+    outline: 0;
+    transition: border-color 1s;
+}
+/*El doble dos puntos son para los 'pseudo-elementos' de la caja*/
+.form_ip::placeholder {
+    color: transparent;
+}
+/*Los dos puntos son para los eventos de la caja*/
+.form_ip:focus {
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #42D2FF, #11998e);
+    border-image-slice: 1;
+}
+/*En el placeholder de esta clase(ip) mostrar la siguiente clase(-placeholder)*/
+.form_ip:placeholder-shown ~ .form_box-placeholder {
+    font-size: 1.3rem;
+    cursor: text;/*Cambia el puntero del mouse*/
+    top: 50px;
+}
+
+.form_box-placeholder{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+.form_ip:focus ~ .form_box-placeholder {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #42D2FF;
+    font-weight: 700;
+}
+
+.boxBtnB{
+    margin-top: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.boxBtn{
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;/*falto un cursor: pointer*/
+}
+
+.boxBtn_b{
+    position: relative;
+    z-index: 20;
+    padding: 10px 20px;
+    font-size: 130%;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    background: none;
+    text-transform: uppercase;
+    color: #636363;
+    transition: .5s;
+}
+
+.boxBtn_s{
+    position: absolute;
+    z-index: 10;
+    background-color: #42D2FF88;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -100%;
+    transition: .5s;
+}
+
+.boxBtn:hover{
+    box-shadow: 0px 2px 5px #636363b3;
+}
+
+.boxBtn:hover .boxBtn_s{
+    left: -10%;
+}
+
+.boxBtn_b:hover{
+    color: white;
+}
